@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to the CSS file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="line"></div>
+      <h1 class="header-title">Bundle & Save</h1>
+      <div class="line"></div>
+    </header>
+
+    <main>
+      <!-- First Box -->
+      <section class="box top-box" id="bundle1">
+        <div class="box-content">
+          <input
+            type="radio"
+            name="bundle"
+            id="bundle1-radio"
+            onclick="handleRadioButtonClick(1)"
+          />
+          <label for="bundle1">
+            <span class="product-name">1 Pair</span>
+            <br />
+            <span class="product-price">DKK 195.00</span>
+          </label>
+        </div>
+        <div class="details">
+          <div class="row">
+            <label for="size1">Size</label>
+            <label for="color1">Color</label>
+          </div>
+          <div class="row">
+            <h6>#1</h6>
+            <select id="size1">
+              <option selected disabled>Size</option>
+              <option>UK-1</option>
+              <option>UK-2</option>
+            </select>
+
+            <select id="color1">
+              <option selected disabled>Color</option>
+              <option>Red</option>
+              <option>Black</option>
+            </select>
+          </div>
+          <div class="row">
+            <h6>#2</h6>
+            <select id="size2">
+              <option selected disabled>Size</option>
+              <option>UK-3</option>
+              <option>UK-4</option>
+            </select>
+
+            <select id="color2">
+              <option selected disabled>Color</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+        <span class="discount">50% OFF</span>
+      </section>
+
+      <!-- Second Box -->
+      <section class="box top-box" id="bundle2">
+        <!-- Add Most Popular content -->
+        <div class="box-content">
+          <input
+            type="radio"
+            name="bundle"
+            id="bundle2-radio"
+            onclick="handleRadioButtonClick(2)"
+          />
+          <label for="bundle2">
+            <span class="product-name">2 Pair</span>
+            <br />
+            <span class="product-price">DKK 345.00</span>
+            <!-- Add DKK 195.00 -->
+          </label>
+        </div>
+        <div class="details">
+          <div class="row">
+            <label for="size2">Size</label>
+            <label for="color2">Color</label>
+          </div>
+          <div class="row">
+            <h6>#1</h6>
+            <select id="size3">
+              <option selected disabled>Size</option>
+              <option>UK-5</option>
+              <option>UK-6</option>
+            </select>
+
+            <select id="color3">
+              <option selected disabled>Color</option>
+              <option>Yellow</option>
+              <option>Orange</option>
+            </select>
+          </div>
+          <div class="row">
+            <h6>#2</h6>
+            <select id="size4">
+              <option selected disabled>Size</option>
+              <option>UK-7</option>
+              <option>UK-8</option>
+            </select>
+
+            <select id="color4">
+              <option selected disabled>Color</option>
+              <option>Green</option>
+              <option>pink</option>
+            </select>
+          </div>
+        </div>
+        <span class="most-popular">Most Popular</span>
+        <span class="discount">40% OFF</span>
+        <span class="old-price">DKK 195.00</span>
+        <!-- Add the original price -->
+      </section>
+
+      <!-- Third Box -->
+      <section class="box top-box" id="bundle3">
+        <div class="box-content">
+          <input
+            type="radio"
+            name="bundle"
+            id="bundle3-radio"
+            onclick="handleRadioButtonClick(3)"
+          />
+          <label for="bundle2">
+            <span class="product-name">3 Pair</span>
+            <br />
+            <span class="product-price">DKK 528.00</span>
+          </label>
+        </div>
+        <div class="details">
+          <div class="row">
+            <label for="size2">Size</label>
+            <label for="color2">Color</label>
+          </div>
+          <div class="row">
+            <h6>#1</h6>
+            <select id="size3">
+              <option selected disabled>Size</option>
+              <option>UK-9</option>
+              <option>UK-10</option>
+            </select>
+
+            <select id="color3">
+              <option selected disabled>Color</option>
+              <option>Lavnder</option>
+              <option>Black</option>
+            </select>
+          </div>
+          <div class="row">
+            <h6>#2</h6>
+            <select id="size4">
+              <option selected disabled>Size</option>
+              <option>UK-5</option>
+              <option>UK-7</option>
+            </select>
+
+            <select id="color4">
+              <option selected disabled>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+        <span class="discount">60% OFF</span>
+      </section>
+
+      <div class="footer-container">
+        <div class="content-left">
+          <p>Free 2 Day Shipping</p>
+        </div>
+
+        <div class="content-right">
+          <p>Total: DKK 360.00</p>
+        </div>
+      </div>
+
+      <button class="add-to-cart">+ Add to Cart</button>
+    </main>
+
+    <footer>
+      <p>Powered by Pumper</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include the JavaScript file -->
+  </body>
+</html>
