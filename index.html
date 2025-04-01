@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cart</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Link to the CSS file -->
   </head>
 
   <body>
     <header>
-      <div class="line"></div>
-      <h1 class="header-title">Bundle & Save</h1>
-      <div class="line"></div>
+      <div class="header-container">
+        <div class="line"></div>
+        <h1 class="header-title">YAY! It's BOGO</h1>
+        <div class="line"></div>
+      </div>
     </header>
 
     <main>
@@ -25,10 +26,17 @@
             id="bundle1-radio"
             onclick="handleRadioButtonClick(1)"
           />
+
           <label for="bundle1">
-            <span class="product-name">1 Pair</span>
+            <span class="product-name">1 Unit</span>
+
+            <span class="discount">10% OFF</span>
             <br />
-            <span class="product-price">DKK 195.00</span>
+            <span class="info">Standard Price</span>
+
+            <span class="product-price">$10.00USD</span>
+            <br />
+            <span class="old-price">$24.00USD</span>
           </label>
         </div>
         <div class="details">
@@ -65,11 +73,11 @@
             </select>
           </div>
         </div>
-        <span class="discount">50% OFF</span>
       </section>
 
       <!-- Second Box -->
       <section class="box top-box" id="bundle2">
+        <div class="most-popular">Most Popular</div>
         <!-- Add Most Popular content -->
         <div class="box-content">
           <input
@@ -79,10 +87,14 @@
             onclick="handleRadioButtonClick(2)"
           />
           <label for="bundle2">
-            <span class="product-name">2 Pair</span>
+            <span class="product-name">2 Unit</span>
+            <!-- <br /> -->
+            <span class="discount">20% OFF</span>
             <br />
-            <span class="product-price">DKK 345.00</span>
-            <!-- Add DKK 195.00 -->
+
+            <span class="product-price">$18.00USD</span>
+            <br />
+            <span class="old-price">$24.00USD</span>
           </label>
         </div>
         <div class="details">
@@ -119,9 +131,7 @@
             </select>
           </div>
         </div>
-        <span class="most-popular">Most Popular</span>
-        <span class="discount">40% OFF</span>
-        <span class="old-price">DKK 195.00</span>
+
         <!-- Add the original price -->
       </section>
 
@@ -134,10 +144,15 @@
             id="bundle3-radio"
             onclick="handleRadioButtonClick(3)"
           />
-          <label for="bundle2">
-            <span class="product-name">3 Pair</span>
+          <label for="bundle3">
+            <span class="product-name">3 Unit</span>
+            <!-- <br /> -->
+            <span class="discount">30% OFF</span>
             <br />
-            <span class="product-price">DKK 528.00</span>
+
+            <span class="product-price">$24.00USD</span>
+            <br />
+            <span class="old-price">$20.00USD</span>
           </label>
         </div>
         <div class="details">
@@ -174,16 +189,15 @@
             </select>
           </div>
         </div>
-        <span class="discount">60% OFF</span>
       </section>
 
       <div class="footer-container">
         <div class="content-left">
-          <p>Free 2 Day Shipping</p>
+          <p>Free Delivery</p>
         </div>
 
         <div class="content-right">
-          <p>Total: DKK 360.00</p>
+          <p>Total: $18.00USD</p>
         </div>
       </div>
 
@@ -191,10 +205,9 @@
     </main>
 
     <footer>
-      <p>Powered by Pumper</p>
+      <p>@ Powered by Pumper</p>
     </footer>
 
     <script src="script.js"></script>
-    <!-- Include the JavaScript file -->
   </body>
 </html>
